@@ -1,0 +1,55 @@
+site_name: PlatoPeanut's Blog
+
+theme:
+  name: material
+  logo: assets/avatar.png
+  favicon: assets/avatar.png
+  features:
+    - navigation.top
+    - search.highlight
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tabs
+    - navigation.path
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github 
+      link: https://github.com/platopeanut
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/platopeanut
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:2857177614@qq.com
+
+copyright: Copyright &copy; 2023 Jiaming Chen
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

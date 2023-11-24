@@ -1,4 +1,5 @@
-site_name: PlatoPeanut's Blog
+site_name: ChenJiaming's Blog
+site_author: Jiaming Chen
 
 theme:
   name: material
@@ -6,12 +7,17 @@ theme:
   favicon: assets/avatar.png
   features:
     - navigation.top
-    - search.highlight
     - navigation.footer
     - navigation.instant
     - navigation.instant.progress
+    - navigation.tracking
     - navigation.tabs
     - navigation.path
+    - search.highlight
+    - header.autohide
+  font:
+    text: Roboto
+    code: JetBrains Mono
   palette:
     # Palette toggle for light mode
     - scheme: default
@@ -29,6 +35,7 @@ theme:
 
 plugins:
   - search
+  - glightbox
 
 extra:
   social:
@@ -47,7 +54,11 @@ markdown_extensions:
       generic: true
   - pymdownx.highlight:
       anchor_linenums: true
+  - admonition
+  - pymdownx.details
   - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
 extra_javascript:
   - javascripts/mathjax.js
